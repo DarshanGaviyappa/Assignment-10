@@ -13,7 +13,7 @@ import jobsRouter from "./routes/jobsRouter.js";
 import userRouter from "./routes/routes.js";
 dotenv.config();
 
-mongoose.connect(process.env.mongo_uri);
+mongoose.connect('mongodb+srv://darshang117cs046:Darshan@cluster0.ybdyp.mongodb.net/');
 
 mongoose.connection
   .once("open", () => console.log("Connected"))
